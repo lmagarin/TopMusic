@@ -64,7 +64,10 @@ public class TopMusic {
 	 * @return top.get(0)
 	 */
 	public Cancion CancionMasEscuchada() {
+		if(top.isEmpty)
+			return null;
 		return top.get(0);
+		
 
 	}
 
