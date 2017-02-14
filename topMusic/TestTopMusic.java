@@ -49,8 +49,8 @@ public class TestTopMusic {
 				mostrarTop(top);
 				break;
 			case 6:
-				System.out.println(top.CancionMasEscuchada());
-
+				MostrarMasEscuchada(top)
+				break;
 			default:
 				System.out.println("La opcion introducida, no es valida");
 
@@ -59,6 +59,18 @@ public class TestTopMusic {
 
 	}
 
+	/**
+	*Muestra la cancion que se encuentra en el top
+	*@param top
+	*/
+	private static void MostrarMasEscuchada(TopMusic top){
+		if(top.CancionMasEscuchada() == null){
+			System.out.println("Error, no se pudo mostrar la mas escuchada");
+		}
+		else{
+		 	System.out.println(top.CancionMasEscuchada());
+		}	
+	}
 	/**
 	 * bajar puesto
 	 * 
